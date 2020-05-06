@@ -8,7 +8,7 @@
     <Nav />
     <!-- 路由容器 -->
     <router-view/>
-    <!-- 尾部 -->
+    <!-- 尾部   -->
     <Foot />
   </div>
 </template>
