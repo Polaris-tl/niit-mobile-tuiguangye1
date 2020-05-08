@@ -4,7 +4,9 @@
       <p>{{title}}</p>
       <a :href=url >更多>></a>
     </div>
-    <slot />
+    <div style="background:#fafafa">
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -29,8 +31,9 @@ export default {
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    padding-bottom: 18px;
+    padding-bottom: 23px;
     border-bottom: 2px solid #f3f3f3;
+    margin-bottom: 15px;
     a{
       font-size: 12px;
       position: absolute;
@@ -45,11 +48,11 @@ export default {
     }
     p::after{
       content: '';
-      width: 64px;
+      width: 50px;
       height: 3px;
       background-color: #0d87fc;
       position: absolute;
-      bottom: 5px;
+      bottom: 12px;
       right: 0;
       left: 0;
       box-shadow: 0px 0px 4.85px 0.15px rgba(0, 15, 25, 0.29);

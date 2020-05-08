@@ -33,5 +33,13 @@ export default {
 
 <style lang="less">
 *{margin: 0;padding:0;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix::after{
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
 a{text-decoration: none;}
 </style>

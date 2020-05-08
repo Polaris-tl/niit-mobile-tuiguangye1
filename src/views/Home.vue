@@ -8,8 +8,32 @@
       </div>
     </div>
     <img class="ydxx" src="@/assets/index/一地学习.png" alt="">
-    <Section title="校园环境" url="https://www.baidu.com">ssssss</Section>
-    <Section title="学校简介" url="https://www.baidu.com">ssssss</Section>
+    <Section title="校园环境" url="https://www.baidu.com" class="xyhj clearfix">
+      <div class="left fl">
+        <SmallHead title1="丰富的课余生活" title2="学生组织打篮球"/>
+        <img src="@/assets/index/xyhj-1.png" alt="">
+      </div>
+      <div class="right fl">
+        <SmallHead title1="便利的生活设施" title2="寝室安静舒适"/>
+        <swiper ref="mySwiper" :options="swiperOptions">
+          <swiper-slide><img src="@/assets/index/banner.jpg" alt="" style="width:100%" /></swiper-slide>
+          <swiper-slide><img src="@/assets/index/banner.jpg" alt="" style="width:100%" /></swiper-slide>
+          <swiper-slide><img src="@/assets/index/banner.jpg" alt="" style="width:100%" /></swiper-slide>
+        </swiper>
+        <SmallHead title1="完善的设施设备" title2="教室设备完美保障"/>
+        <swiper ref="mySwiper" :options="swiperOptions">
+          <swiper-slide><img src="@/assets/index/banner.jpg" alt="" style="width:100%" /></swiper-slide>
+          <swiper-slide><img src="@/assets/index/banner.jpg" alt="" style="width:100%" /></swiper-slide>
+          <swiper-slide><img src="@/assets/index/banner.jpg" alt="" style="width:100%" /></swiper-slide>
+        </swiper>
+      </div>
+    </Section>
+    <Section title="学校简介" class="xxjj" url="https://www.baidu.com">
+    <img src="@/assets/index/xxjj.png" alt="" />
+    <p>
+      重庆互联网学校总建筑面积约16万平方米，按照智慧校园、未来生活的理念建设，能同时提供10000名学员的综合学习和2000名学员的住宿及生活配套服务。NIIT建校39年,在重庆、上海、苏州、常州、海南、贵阳等多省市拥有多个IT直属分校，是我国权威的高端IT学院之一。致力于高端IT技术人才培养、输送，一直以“就业质量”为本，不仅看重学员的就业率，更注重学员的就业质量，以培养“实用型、创新型”人才为目标。
+    </p>
+    </Section>
     <Section title="学校优势" url="https://www.baidu.com">ssssss</Section>
     <Section title="热门课程" url="https://www.baidu.com">ssssss</Section>
     <Section title="就业学员" url="https://www.baidu.com">ssssss</Section>
@@ -19,12 +43,22 @@
 
 <script>
 import Section from '@/components/Home/Section.vue'
+import SmallHead from '@/components/Home/SmallHead.vue'
 
 export default {
   name: 'Home',
   components: {
-    Section
-  }
+    Section,
+    SmallHead
+  },
+  data() {
+      return {
+        swiperOptions: {
+         spaceBetween : 10,
+         slidesPerView :2,
+        }
+      }
+    },
 }
 </script>
 
@@ -49,6 +83,49 @@ export default {
     }
     .scroll{
       span{position: absolute;}
+    }
+  }
+  .xyhj{
+    img{
+      width: 80%;
+      display: block;
+      margin: auto;
+      margin-top: 20px
+    }
+    .left{
+      width: 50%;
+      box-sizing: border-box;
+      border-right: 1px solid #eee;
+      overflow: hidden;
+      padding: 10px 10px
+    }
+    .right{
+      width: 50%;
+      overflow: hidden;
+      box-sizing: border-box;
+      padding: 10px 10px;
+      img{
+        margin-top:10px;
+        margin-bottom:10px;
+      }
+    }
+  }
+  .xxjj{
+    img{
+      margin:auto;
+      display: block;
+      width: 66%;
+      margin-top:20px;
+      margin-bottom: 16px;
+    }
+    p{
+      width: 94%;
+      margin: 0 auto;
+      font-size: 14px;
+      color: #535353;
+      line-height: 1.7;
+      text-indent: 24px;
+      text-align: justify;
     }
   }
   .ydxx{
