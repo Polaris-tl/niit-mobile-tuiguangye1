@@ -4,7 +4,7 @@
       <p>{{title}}</p>
       <a :href=url >更多>></a>
     </div>
-    <div style="background:#fafafa">
+    <div style="background:#fafafa;padding: 18px 0;">
       <slot />
     </div>
   </div>
