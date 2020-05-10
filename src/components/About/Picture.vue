@@ -6,19 +6,19 @@
       <span :class="{active:showId == 3}" :id="3">课堂</span>
     </div>
     <div class="pic clearfix" id="pic">
-      <div class="xuexiao" v-if="showId == 1">
+      <div class="xuexiao" v-show="showId == 1">
         <img src="@/assets/about/xy1.jpg" alt />
         <img src="@/assets/about/xy2.jpg" alt />
         <img src="@/assets/about/xy3.jpg" alt />
         <img src="@/assets/about/xy4.jpg" alt />
       </div>
-      <div class="xuexiao" v-if="showId == 2">
+      <div class="xuexiao" v-show="showId == 2">
         <img src="@/assets/about/qs1.jpg" alt />
         <img src="@/assets/about/qs2.jpg" alt />
         <img src="@/assets/about/qs3.jpg" alt />
         <img src="@/assets/about/qs4.jpg" alt />
       </div>
-      <div class="xuexiao" v-if="showId == 3">
+      <div class="xuexiao" v-show="showId == 3">
         <img src="@/assets/about/sk1.jpg" alt />
         <img src="@/assets/about/sk2.jpg" alt />
         <img src="@/assets/about/sk3.jpg" alt />
@@ -30,15 +30,28 @@
 
 <script>
 export default {
-  data:() => {
+  data(){
     return{
-      showId:1
+      showId:1,
+      intervalId:null
     }
   },
   methods:{
     handleClick: function(e){
       this.showId = e.target.id
+    },
+    autoplay: function(){
+      this.showId++
+      if(this.showId > 3){
+        this.showId = 1
+      }
     }
+  },
+  mounted(){
+    this.intervalId = setInterval(this.autoplay,3500)
+  },
+  beforeDestroy(){
+    clearInterval(this.intervalId)
   }
 };
 </script>

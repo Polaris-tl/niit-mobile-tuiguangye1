@@ -9,12 +9,8 @@
       <More @click.native="handleMoreClick" ref="more" :isBoxCollapse="isBoxCollapse" />
     </Section>
 
-    <Section title="发展历程" url="https://www.baidu.com">
-      <swiper>
-        <swiper-slide>1111</swiper-slide>
-        <swiper-slide>2222</swiper-slide>
-        <swiper-slide>1113331</swiper-slide>
-      </swiper>
+    <Section title="发展历程" url="https://www.baidu.com" class="s2">
+      <Development class="dev"/>
       <Button />
     </Section>
 
@@ -37,6 +33,7 @@ import Button from "@/components/Common/Button.vue";
 import More from "@/components/About/More.vue";
 import Teachers from "@/components/About/Teachers.vue";
 import Picture from "@/components/About/Picture.vue";
+import Development from "@/components/About/Development.vue";
 
 export default {
   name: "About",
@@ -51,13 +48,12 @@ export default {
     More,
     Button,
     Teachers,
-    Picture
+    Picture,
+    Development
   },
   methods: {
     handleMoreClick: function() {
-      console.log("asdasd");
-      this.$refs.box.style.maxHeight =
-        this.$refs.box.style.maxHeight == "1000px" ? "193px" : "1000px";
+      this.$refs.box.style.maxHeight = this.$refs.box.style.maxHeight == "1000px" ? "193px" : "1000px";
       this.isBoxCollapse = !this.isBoxCollapse;
     }
   }
@@ -66,9 +62,10 @@ export default {
 
 <style lang="less" scoped>
 .s1 {
-  margin: 0 16px;
+  
   position: relative;
   .box {
+    margin: 0 16px;
     max-height: 193px;
     transition: all 0.4s;
     overflow: hidden;
@@ -87,6 +84,11 @@ export default {
     }
   }
 }
+.s2{
+  .dev{
+    margin: 10px 10px 35px 10px;
+  }
+}
 .s4 {
   > p {
     font-size: 14px;
@@ -97,6 +99,13 @@ export default {
     margin-top: 12px;
     width: 92%;
     margin: 12px auto 0 auto;
+  }
+  p{
+    width: 91%;
+    margin: 10px auto;
+    text-align: justify;
+    text-indent: 36px;
+    line-height: 2;
   }
 }
 </style>
