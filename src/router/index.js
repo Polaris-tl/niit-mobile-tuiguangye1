@@ -24,9 +24,9 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "Brife" */ '../views/Enviroment.vue')
   },
   {
-    path: '/employ',
-    name: 'Employ',
-    component: () => import(/* webpackChunkName: "Employ" */ '../views/Employ.vue')
+    path: '/employment',
+    name: 'Employment',
+    component: () => import(/* webpackChunkName: "Employ" */ '../views/Employment.vue')
   }
 ]
 

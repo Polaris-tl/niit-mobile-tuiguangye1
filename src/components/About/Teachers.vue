@@ -1,6 +1,6 @@
 <template>
   <div class="teacher">
-    <ul v-for="teacher in teachers" :key="teacher.id">
+    <ul v-for="(teacher,index) in teachers" :key="index">
       <li class="clearfix">
         <div class="left fl">
           <img :src="teacher.img_url" alt="">
@@ -23,21 +23,18 @@ export default {
     return{
       teachers:[
         {
-          id:1,
           img_url:img,
           name:"Ashok Khandelwal",
           position:"职业讲师",
           intro:"信息技术和管理硕士，软件工程高级文凭"
         },
         {
-          id:2,
           img_url:img,
           name:"22222",
           position:"职业讲师",
           intro:"信息技术和管理硕士，软件工程高级文凭"
         },
         {
-          id:3,
           img_url:img,
           name:"33333333",
           position:"职业讲师",

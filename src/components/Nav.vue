@@ -15,7 +15,7 @@
       </li>
       <li>
         <img src="@/assets/index/icon-4.png" alt="">
-        <router-link to="/employ">就业</router-link>
+        <router-link to="/employment">就业</router-link>
       </li>
     </ul>
   </div>

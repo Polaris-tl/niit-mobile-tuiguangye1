@@ -32,7 +32,9 @@
       <HotClass />
     </Section>
 
-    <Section title="就业学员" url="https://www.baidu.com">ssssss</Section>
+    <Section title="就业学员" url="https://www.baidu.com">
+      <Employment />
+    </Section>
 
     <Section title="常见问题解答" url="https://www.baidu.com">
       <Question />
@@ -45,6 +47,7 @@ import Section from "@/components/Home/Section.vue";
 import Huanjin from "@/components/Home/Huanjin.vue";
 import HotClass from "@/components/Home/HotClass.vue";
 import Advantage from "@/components/Home/Advantage.vue";
+import Employment from "@/components/Home/Employment.vue";
 import Question from "@/components/Home/Question.vue";
 
 export default {
@@ -54,7 +57,9 @@ export default {
     Huanjin,
     HotClass,
     Advantage,
-    Question
+    Employment,
+    Question,
+    
   }
   
 };
