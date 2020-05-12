@@ -1,44 +1,16 @@
 <template>
   <swiper :options="swiperOptions">
-    <swiper-slide>
+    <swiper-slide v-for="(item,index) in stuData" :key="index">
       <div class="hack">
         <div class="wrap">
-          <img src="@/assets/employment/ttt.png" alt />
-          <p class="name">谢昆</p>
+          <img :src="item.img_url" alt />
+          <p class="name">{{item.name}}</p>
           <p class="salary">
             月薪：
-            <span>7000</span>
+            <span>{{item.salary}}</span>
           </p>
-          <p class="position">后端架构师</p>
-          <p class="conpany">重庆哈哈哈及时有限公司</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="hack">
-        <div class="wrap">
-          <img src="@/assets/employment/ttt.png" alt />
-          <p class="name">谢昆</p>
-          <p class="salary">
-            月薪：
-            <span>7000</span>
-          </p>
-          <p class="position">后端架构师</p>
-          <p class="conpany">重庆哈哈哈及时有限公司</p>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide>
-      <div class="hack">
-        <div class="wrap">
-          <img src="@/assets/employment/ttt.png" alt />
-          <p class="name">谢昆</p>
-          <p class="salary">
-            月薪：
-            <span>7000</span>
-          </p>
-          <p class="position">后端架构师</p>
-          <p class="conpany">重庆哈哈哈及时有限公司</p>
+          <p class="position">{{item.position}}</p>
+          <p class="conpany">{{item.conpany}}</p>
         </div>
       </div>
     </swiper-slide>
@@ -46,6 +18,8 @@
 </template>
 
 <script>
+import img1 from '@/assets/employment/04.png';
+
 export default {
   name: "Gaoxin",
   data() {
@@ -53,7 +27,73 @@ export default {
       swiperOptions: {
         spaceBetween: 10,
         slidesPerView: 2.5
-      }
+      },
+      stuData: [
+        {
+          img_url:img1,
+          name:"陈亮",
+          salary:8000,
+          position:"前端切图仔",
+          conpany:"公司：华清佳信"
+        },
+        {
+          img_url:img1,
+          name:"王健",
+          salary:7000,
+          position:"前端切图仔",
+          conpany:"零起点科技"
+        },
+        {
+          img_url:img1,
+          name:"王思壹",
+          salary:7000,
+          position:"前端切图仔",
+          conpany:"金网安泰"
+        },
+        {
+          img_url:img1,
+          name:"彭磊",
+          salary:7000,
+          position:"前端切图仔",
+          conpany:"视腾信息"
+        },
+        {
+          img_url:img1,
+          name:"周*",
+          salary:7000,
+          position:"前端切图仔",
+          conpany:"专业：JAVA精英班"
+        },
+        {
+          img_url:img1,
+          name:"肖*雅",
+          salary:7000,
+          position:"前端切图仔",
+          conpany:"WEB精英班"
+        },
+        {
+          img_url:img1,
+          name:"陈亮",
+          salary:7000,
+          position:"前端切图仔",
+          conpany:"金网安泰"
+        },
+        {
+          img_url:img1,
+          name:"陈亮",
+          salary:7000,
+          position:"前端切图仔",
+          conpany:"金网安泰"
+        },
+        {
+          img_url:img1,
+          name:"陈亮",
+          salary:7000,
+          position:"前端切图仔",
+          conpany:"金网安泰"
+        },
+
+      ]
     };
   }
 };
