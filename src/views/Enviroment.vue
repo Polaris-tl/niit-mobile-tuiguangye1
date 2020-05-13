@@ -16,6 +16,7 @@
           <img src="@/assets/enviroment/xxhj/timg (1).jpg" alt />
         </div>
       </div>
+      <Button />
     </Section>
     <Section title="上课环境">
       <div class="description">勤思/认真高效/实时解答/项目实战</div>
@@ -31,6 +32,7 @@
           <img src="@/assets/enviroment/skhj/23.jpg" alt />
         </div>
       </div>
+      <Button />
     </Section>
     <Section title="寝室环境">
       <div class="description">书桌/衣柜/空调/wifi/电视</div>
@@ -48,6 +50,7 @@
           <img src="@/assets/enviroment/qs/9.jpg" alt />
         </div>
       </div>
+      <Button />
     </Section>
   </div>
 </template>
@@ -55,10 +58,12 @@
 
 <script>
 import Section from "@/components/Home/Section.vue";
+import Button from "@/components/Common/Button.vue";
 export default {
   name: "Enviroment",
   components: {
-    Section
+    Section,
+    Button
   }
 };
 </script>

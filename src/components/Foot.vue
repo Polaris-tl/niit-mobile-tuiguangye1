@@ -6,15 +6,15 @@
     <div class="button">
       <div>
         <img src="@/assets/index/01.png" alt="">
-        <p>了解专业</p>
+        <a href="http://awt.zoosnet.net/LR/Chatpre.aspx?id=AWT24214282&lng=cn">了解专业</a>
       </div>
       <div>
         <img src="@/assets/index/02.png" alt="">
-        <p>在线咨询</p>
+        <a href="http://awt.zoosnet.net/LR/Chatpre.aspx?id=AWT24214282&lng=cn">在线咨询</a>
       </div>
       <div>
         <img src="@/assets/index/03.png" alt="">
-        <p>电话咨询</p>
+        <a href="tel:023-63561996">电话咨询</a>
       </div>
     </div>
   </div>
@@ -53,7 +53,8 @@ img {
       &:nth-child(2){
         background: #12d5ff;
       }
-      p{
+      a{
+        color: #fff;
         margin-left: 3px;
       }
     }

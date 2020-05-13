@@ -9,7 +9,7 @@ export default {
   props:{
     url:{
       type:String,
-      default:'http://www.cqhlwxy.cn/wap'
+      default:'http://awt.zoosnet.net/LR/Chatpre.aspx?id=AWT24214282&lng=cn'
     }
   }
 }

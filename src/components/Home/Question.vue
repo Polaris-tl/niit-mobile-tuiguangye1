@@ -2,7 +2,7 @@
   <ul>
     <li v-for="(ques,index) in questions" v-bind:key="index">
       <p>{{ques}}</p>
-      <a class="button">点击咨询</a>
+      <a class="button" href="http://awt.zoosnet.net/LR/Chatpre.aspx?id=AWT24214282&lng=cn">点击咨询</a>
     </li>
   </ul>
 </template>
@@ -13,12 +13,12 @@ export default {
         return{
             questions:[
                 "学费多少？可以分期吗？",
-                "初中已毕业大于一年可申请吗?",
-                "已毕业但是没拿毕业证可以吗？",
+                "没有基础可以学会吗?",
+                "你们学了后能拿什么文凭",
                 "贫困补助申请有什么条件?",
-                "奖学金发放比例是怎么样的?",
-                "需要提前报名吗，提前多久呢?",
-                "毕业后工作学校是怎么安排的呢?",
+                "你们都有哪些专业?",
+                "有没有电竞专业?",
+                "毕业后学校会不会分配工作?",
                 "毕业以后可以报考公务员吗？"
             ]
         }

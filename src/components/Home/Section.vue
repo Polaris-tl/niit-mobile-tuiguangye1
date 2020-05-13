@@ -2,7 +2,7 @@
   <div class="section">
     <div class="head">
       <p>{{title}}</p>
-      <a :href=url >更多>></a>
+      <a :href="url" >更多>></a>
     </div>
     <div style="background:#fafafa;padding: 18px 0;">
       <slot />
@@ -15,7 +15,10 @@ export default {
   name:"Section",
   props:{
     title: String,
-    url: String,
+    url: {
+      type:String,
+      default:'http://awt.zoosnet.net/LR/Chatpre.aspx?id=AWT24214282&lng=cn'
+      },
   }
 }
 </script>

@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-
     <div class="news">
       <p class="left">
         新闻
@@ -15,28 +14,30 @@
     </div>
 
     <img class="ydxx" src="@/assets/index/一地学习.png" alt />
-    <Section title="校园环境" url="https://www.baidu.com" >
+    <Section title="校园环境">
       <Huanjin />
     </Section>
 
-    <Section title="学校简介" class="xxjj" url="https://www.baidu.com">
+    <Section title="学校简介" class="xxjj">
       <img src="@/assets/index/xxjj.png" alt />
       <p>重庆互联网学校总建筑面积约16万平方米，按照智慧校园、未来生活的理念建设，能同时提供10000名学员的综合学习和2000名学员的住宿及生活配套服务。NIIT建校39年,在重庆、上海、苏州、常州、海南、贵阳等多省市拥有多个IT直属分校，是我国权威的高端IT学院之一。致力于高端IT技术人才培养、输送，一直以“就业质量”为本，不仅看重学员的就业率，更注重学员的就业质量，以培养“实用型、创新型”人才为目标。</p>
     </Section>
-
-    <Section title="学校优势" url="https://www.baidu.com">
+    <Button />
+    <Section title="学校优势">
       <Advantage />
     </Section>
 
-    <Section title="热门课程" url="https://www.baidu.com">
+    <Section title="热门课程">
       <HotClass />
+      <Button />
     </Section>
 
-    <Section title="就业学员" url="https://www.baidu.com">
-      <Employment />
+    <Section title="就业学员">
+      <!-- <Employment /> -->
+      <Gaoxin />
     </Section>
 
-    <Section title="常见问题解答" url="https://www.baidu.com">
+    <Section title="常见问题解答">
       <Question />
     </Section>
   </div>
@@ -44,10 +45,12 @@
 
 <script>
 import Section from "@/components/Home/Section.vue";
+import Button from "@/components/Common/Button.vue";
 import Huanjin from "@/components/Home/Huanjin.vue";
 import HotClass from "@/components/Home/HotClass.vue";
 import Advantage from "@/components/Home/Advantage.vue";
-import Employment from "@/components/Home/Employment.vue";
+// import Employment from "@/components/Home/Employment.vue";
+import Gaoxin from "@/components/Employment/Gaoxin.vue";
 import Question from "@/components/Home/Question.vue";
 
 export default {
@@ -57,11 +60,11 @@ export default {
     Huanjin,
     HotClass,
     Advantage,
-    Employment,
+    // Employment,
     Question,
-    
+    Gaoxin,
+    Button
   }
-  
 };
 </script>
 
