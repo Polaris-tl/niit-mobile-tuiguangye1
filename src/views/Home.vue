@@ -1,18 +1,6 @@
 <template>
   <div class="home">
-    <div class="news">
-      <p class="left">
-        新闻
-        <br />资讯
-      </p>
-      <div class="scroll">
-        <span>热门</span>
-        <p>怎么打造自身职场技能？</p>
-        <span>热门</span>
-        <p>怎么打造自身职场技能？</p>
-      </div>
-    </div>
-
+    <News />
     <img class="ydxx" src="@/assets/index/一地学习.png" alt />
     <Section title="校园环境">
       <Huanjin />
@@ -48,6 +36,7 @@ import Section from "@/components/Home/Section.vue";
 import Button from "@/components/Common/Button.vue";
 import Huanjin from "@/components/Home/Huanjin.vue";
 import HotClass from "@/components/Home/HotClass.vue";
+import News from "@/components/Home/News.vue";
 import Advantage from "@/components/Home/Advantage.vue";
 // import Employment from "@/components/Home/Employment.vue";
 import Gaoxin from "@/components/Employment/Gaoxin.vue";
@@ -59,6 +48,7 @@ export default {
     Section,
     Huanjin,
     HotClass,
+    News,
     Advantage,
     // Employment,
     Question,
@@ -69,30 +59,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.news {
-  overflow: hidden;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  padding: 10px 0;
-  width: 96%;
-  margin: 0 auto;
-  color: #616161;
-  letter-spacing: 2px;
-  line-height: 20px;
-  .left {
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 10px;
-    float: left;
-    border-right: 1px solid #bdbdbd;
-    padding-right: 17px;
-  }
-  .scroll {
-    span {
-      position: absolute;
-    }
-  }
-}
+
 .xxjj {
   img {
     margin: auto;

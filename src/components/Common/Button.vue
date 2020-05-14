@@ -24,7 +24,7 @@ export default {
     line-height: 30px;
     font-size: 14px;
     border-radius: 100px;
-    box-shadow: 2px 3px 1px #3e3e3e66;
+    box-shadow: 2px 3px 1px rgba(62, 62, 62, 0.4);
     margin: auto;
     a{
       color: #fff;

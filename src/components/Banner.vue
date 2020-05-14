@@ -2,8 +2,8 @@
   <div>
     <swiper ref="mySwiper" :options="swiperOptions">
       <swiper-slide><img src="@/assets/index/banner.jpg" alt="" /></swiper-slide>
-      <swiper-slide><img src="@/assets/index/banner.jpg" alt="" /></swiper-slide>
-      <swiper-slide><img src="@/assets/index/banner.jpg" alt="" /></swiper-slide>
+      <swiper-slide><img src="@/assets/index/banner2.jpg" alt="" /></swiper-slide>
+      <swiper-slide><img src="@/assets/index/banner3.jpg" alt="" /></swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
   </div>

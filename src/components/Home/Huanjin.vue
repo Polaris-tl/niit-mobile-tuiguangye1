@@ -8,25 +8,40 @@
       <SmallHead title1="便利的生活设施" title2="寝室安静舒适" />
       <swiper ref="mySwiper" :options="swiperOptions">
         <swiper-slide>
-          <img src="@/assets/index/banner.jpg" alt style="width:100%" />
+          <img src="@/assets/index/huanjin/9.png" alt style="width:100%" />
         </swiper-slide>
         <swiper-slide>
-          <img src="@/assets/index/banner.jpg" alt style="width:100%" />
+          <img src="@/assets/index/huanjin/13.png" alt style="width:100%" />
         </swiper-slide>
         <swiper-slide>
-          <img src="@/assets/index/banner.jpg" alt style="width:100%" />
+          <img src="@/assets/index/huanjin/24.png" alt style="width:100%" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="@/assets/index/huanjin/26.png" alt style="width:100%" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="@/assets/index/huanjin/74.png" alt style="width:100%" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="@/assets/index/huanjin/75.png" alt style="width:100%" />
         </swiper-slide>
       </swiper>
       <SmallHead title1="完善的设施设备" title2="教室设备完美保障" />
       <swiper ref="mySwiper" :options="swiperOptions">
         <swiper-slide>
-          <img src="@/assets/index/banner.jpg" alt style="width:100%" />
+          <img src="@/assets/index/huanjin/t1.png" alt style="width:100%" />
         </swiper-slide>
         <swiper-slide>
-          <img src="@/assets/index/banner.jpg" alt style="width:100%" />
+          <img src="@/assets/index/huanjin/t2.png" alt style="width:100%" />
         </swiper-slide>
         <swiper-slide>
-          <img src="@/assets/index/banner.jpg" alt style="width:100%" />
+          <img src="@/assets/index/huanjin/t3.png" alt style="width:100%" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="@/assets/index/huanjin/t4.png" alt style="width:100%" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="@/assets/index/huanjin/t5.png" alt style="width:100%" />
         </swiper-slide>
       </swiper>
     </div>
