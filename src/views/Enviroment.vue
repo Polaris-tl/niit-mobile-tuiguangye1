@@ -22,14 +22,14 @@
       <div class="description">勤思/认真高效/实时解答/项目实战</div>
       <div class="picBox clearfix">
         <div class="fl left">
-          <img src="@/assets/enviroment/skhj/75.jpg" alt />
-          <img src="@/assets/enviroment/skhj/22.jpg" alt />
-          <img src="@/assets/enviroment/skhj/25.jpg" alt />
+          <img v-lazy="b2.img1" alt />
+          <img v-lazy="b2.img2" alt />
+          <img v-lazy="b2.img3" alt />
         </div>
         <div class="fl left">
-          <img src="@/assets/enviroment/skhj/24.jpg" alt />
-          <img src="@/assets/enviroment/skhj/77.jpg" alt />
-          <img src="@/assets/enviroment/skhj/23.jpg" alt />
+          <img v-lazy="b2.img4" alt />
+          <img v-lazy="b2.img5" alt />
+          <img v-lazy="b2.img6" alt />
         </div>
       </div>
       <Button />
@@ -59,11 +59,31 @@
 <script>
 import Section from "@/components/Home/Section.vue";
 import Button from "@/components/Common/Button.vue";
+
+import img1 from "@/assets/enviroment/skhj/75.jpg"
+import img2 from "@/assets/enviroment/skhj/22.jpg"
+import img3 from "@/assets/enviroment/skhj/25.jpg"
+import img4 from "@/assets/enviroment/skhj/24.jpg"
+import img5 from "@/assets/enviroment/skhj/77.jpg"
+import img6 from "@/assets/enviroment/skhj/23.jpg"
+
 export default {
   name: "Enviroment",
   components: {
     Section,
     Button
+  },
+  data:() => {
+    return {
+      b2:{
+        img1,
+        img2,
+        img3,
+        img4,
+        img5,
+        img6
+      }
+    }
   }
 };
 </script>

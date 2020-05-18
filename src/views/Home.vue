@@ -7,7 +7,7 @@
     </Section>
 
     <Section title="学校简介" class="xxjj">
-      <img src="@/assets/index/xxjj.png" alt />
+      <img v-lazy="img1" alt />
       <p>重庆互联网学校总建筑面积约16万平方米，按照智慧校园、未来生活的理念建设，能同时提供10000名学员的综合学习和2000名学员的住宿及生活配套服务。NIIT建校39年,在重庆、上海、苏州、常州、海南、贵阳等多省市拥有多个IT直属分校，是我国权威的高端IT学院之一。致力于高端IT技术人才培养、输送，一直以“就业质量”为本，不仅看重学员的就业率，更注重学员的就业质量，以培养“实用型、创新型”人才为目标。</p>
     </Section>
     <Button />
@@ -44,6 +44,8 @@ import Advantage from "@/components/Home/Advantage.vue";
 import Gaoxin from "@/components/Employment/Gaoxin.vue";
 import Question from "@/components/Home/Question.vue";
 
+import img1 from '@/assets/index/xxjj.png'
+
 export default {
   name: "Home",
   components: {
@@ -57,6 +59,11 @@ export default {
     Gaoxin,
     Button,
     Block
+  },
+  data: () => {
+    return {
+      img1
+    }
   }
 };
 </script>
@@ -70,6 +77,10 @@ export default {
     width: 66%;
     margin-top: 20px;
     margin-bottom: 16px;
+    &[lazy='loading']{
+      width: 10px;
+      height: 10px;
+    }
   }
   p {
     width: 94%;
