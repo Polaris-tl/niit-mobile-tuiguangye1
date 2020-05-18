@@ -52,7 +52,7 @@ export default {
           name:"王*",
           salary:12000,
           position:"JAVA高级工程师",
-          conpany:"能**合科技有限公司"
+          conpany:"金**泰科技有限公司"
         },
         {
           img_url:img3,
@@ -80,14 +80,14 @@ export default {
           name:"肖*雅",
           salary:9000,
           position:"前端工程师",
-          conpany:"重庆易**合信息科技有限公司"
+          conpany:"重庆神**岳信息科技有限公司"
         },
         {
           img_url:img7,
           name:"陈*美",
           salary:10000,
           position:"UI设计师",
-          conpany:"重庆好*彩科技有限公司"
+          conpany:"北京金**新科技有限公司"
         },
         {
           img_url:img8,
@@ -101,7 +101,7 @@ export default {
           name:"姜*",
           salary:10000,
           position:"游戏原画师",
-          conpany:"重庆亮**色科技有限公司"
+          conpany:"亮**色科技有限公司"
         },
 
       ]

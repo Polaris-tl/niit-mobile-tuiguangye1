@@ -4,7 +4,7 @@
     <Head />
     <!-- banner -->
     <Banner />
-    <!-- 路由 -->
+    <!-- 导航 -->
     <Nav />
     <!-- 路由容器 -->
     <router-view/>
