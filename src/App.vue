@@ -2,10 +2,11 @@
   <div id="app">
     <!-- 头部 -->
     <Head />
+    <Nav />
     <!-- banner -->
     <Banner />
     <!-- 导航 -->
-    <Nav />
+    
     <!-- 路由容器 -->
     <router-view/>
     <!-- 尾部   -->
@@ -17,7 +18,8 @@
 <script>
 import Head from '@/components/Head.vue'
 import Banner from '@/components/Banner.vue'
-import Nav from '@/components/Nav.vue'
+// import Nav from '@/components/Nav.vue'
+import Nav from '@/components/New/Nav.vue'
 import Foot from '@/components/Foot.vue'
 
 export default {

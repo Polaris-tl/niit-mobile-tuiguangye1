@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <News />
-    <img class="ydxx" src="@/assets/index/一地学习.png" alt />
     <Section title="校园环境">
       <Huanjin />
+      <Block />
     </Section>
 
     <Section title="学校简介" class="xxjj">
@@ -34,7 +34,9 @@
 <script>
 import Section from "@/components/Home/Section.vue";
 import Button from "@/components/Common/Button.vue";
-import Huanjin from "@/components/Home/Huanjin.vue";
+// import Huanjin from "@/components/Home/Huanjin.vue";
+import Huanjin from "@/components/New/Huanjin.vue";
+import Block from "@/components/New/Block.vue";
 import HotClass from "@/components/Home/HotClass.vue";
 import News from "@/components/Home/News.vue";
 import Advantage from "@/components/Home/Advantage.vue";
@@ -53,7 +55,8 @@ export default {
     // Employment,
     Question,
     Gaoxin,
-    Button
+    Button,
+    Block
   }
 };
 </script>

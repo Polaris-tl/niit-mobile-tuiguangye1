@@ -21,6 +21,7 @@
   align-items: center;
   padding: 2% 1%;
   overflow: hidden;
+  background-color: #f9f9f9;
   > div {
     padding: 0 1%;
   }

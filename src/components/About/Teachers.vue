@@ -17,59 +17,52 @@
 
 <script>
 //在这里引入图片
-import img1 from "@/assets/about/06/Ashok Khandelwal.png";
-import img2 from "@/assets/about/06/BhushanParadkar.png";
-import img3 from "@/assets/about/06/ManishKumarMalhan.png";
-import img4 from "@/assets/about/06/Vishal.png";
-import img5 from "@/assets/about/06/Akash.png";
-import img6 from "@/assets/about/06/FaizalNujumudeen.png";
-import img7 from "@/assets/about/06/Prashant.png";
+import img2 from "@/assets/about/06/Lolly.jpg";
+import img3 from "@/assets/about/06/陈涛.jpg";
+import img4 from "@/assets/about/06/程立康.jpg";
+import img5 from "@/assets/about/06/崔竹肖.jpg";
+import img6 from "@/assets/about/06/管艳华.jpg";
+import img7 from "@/assets/about/06/李凡凡.jpg";
 export default {
   data: () => {
     return {
       teachers: [
         {
-          img_url: img1,
-          name: "Ashok Khandelwal",
-          position: "职业讲师",
-          intro: "信息技术和管理硕士，软件工程高级文凭"
-        },
-        {
           img_url: img2,
-          name: "Bhushan Paradkar",
+          name: "姜春晓 Lolly",
           position: "职业讲师",
           intro:
             "获得了计算机应用硕士学位，过去5年一直在教授.Net技术课程。"
         },
         {
           img_url: img3,
-          name: "Manish Kumar Malhan",
+          name: "陈涛",
           position: "职业讲师",
           intro:
             "工商管理硕士，英语应用硕士，软件工学高级学位。"
         },
         {
           img_url: img4,
-          name: "Vishal",
+          name: "程立康",
           position: "职业讲师",
           intro: "计算机应用硕士，并获得了微软认证讲师（SCP和SCWCD）和Java认证"
         },
         {
           img_url: img5,
-          name: "Akash",
+          name: "崔竹肖",
           position: "职业讲师",
           intro: "信息技术硕士，SCJP和MCPD认证;在NIIT和淮阴工学院10年的经验"
         },
         {
           img_url: img6,
-          name: "Faizal Nujumudeen",
+          name: "管艳华",
           position: "职业讲师",
           intro:
             "计算机应用硕士,4年助理教授经验，2年PHP、web开发经验，熟悉核心PHP脚本、Java编程和Mysql。"
         },
         {
           img_url: img7,
-          name: "Prashant",
+          name: "李凡凡",
           position: "职业讲师",
           intro:
             "一名工程师及软件培训师，过去3年半一直培训Java技术，希望教授更多不同技术。"
